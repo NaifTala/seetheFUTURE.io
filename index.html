@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-image: url('background.jpg'); /* Replace 'your-image-path.jpg' with your image file name */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255); /* Add text color for better visibility on the background */
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel (0.5 for 50% transparency) */
+            z-index: -91; /* Place the overlay behind the content */
+
+        #login-form {
+            max-width: 40px;
+            margin: auto;
+            background-color: rgba(82, 9, 9, 0.8); /* Add a semi-transparent background color for better contrast */
+            padding: 200px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 50%;
+            padding: 10px;
+            margin: 5px 0;
+         
+        }
+
+        button {
+            background-color: #16ba1b;
+            color: rgb(7, 155, 46);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 9px;
+            cursor: pointer;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login-form">
+        <h2>WELCOME</h2>
+        <h3>GUSTO MO MAKITA FUTURE MO?</h3>
+        <h4>LAGAY MO KAHIT ANONG USERNAME AT PASSWORD</h4>
+        <h5>AND SEE YOUR FUTURE AND EMBRACE IT</h5>
+        <form action="main.html">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
